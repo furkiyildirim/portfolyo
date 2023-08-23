@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    min-height: 100vh;
+    background-color: #000000;
+    overflow: hidden;
+    color: rgb(197, 115, 22);
+    
+}
+
+#output{
+    font-size: 40px;
+    font-family: 'Asap', sans-serif;
+    font-family: 'Handjet', cursive;
+}
