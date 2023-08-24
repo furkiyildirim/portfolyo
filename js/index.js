@@ -46,6 +46,6 @@ Booting from Hard Disk|.|||.||.||`;
     typeNextChar();
     
     function goToTerminal(){
-      const url = "portfolyo/html/terminal.html"
+      const url = "html/terminal.html"
       document.location.href = url;
     }
