@@ -55,7 +55,7 @@ function sendCommand(e){
     var spanElement = document.createElement("span");
     const input = document.getElementById('inner-input')
     spanElement.className = "output-element";
-    spanElement.textContent = input.value;
+    spanElement.textContent = userIp+'@guest'+input.value;
     outputs.appendChild(spanElement, outputs.firstChild);
     if (input.value === "cls"){
       commands['cls']()
