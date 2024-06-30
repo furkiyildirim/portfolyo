@@ -44,7 +44,8 @@ function userIp(){
   const e = document.getElementById('label-input')
   fetch('https://api.ipify.org?format=json')
   .then(response => response.json())
-  .then(data => e.innerHTML = `${data.ip}` + "@guest>");
+  .then(data => e.innerHTML = `${data.ip}` + "@guest>")
+  .then(return data.ip);
 }
 userIp()
 
@@ -55,7 +56,7 @@ function sendCommand(e){
     var spanElement = document.createElement("span");
     const input = document.getElementById('inner-input')
     spanElement.className = "output-element";
-    spanElement.textContent = userIp+'@guest'+input.value;
+    spanElement.textContent = userIp()+'@guest'+input.value;
     outputs.appendChild(spanElement, outputs.firstChild);
     if (input.value === "cls"){
       commands['cls']()
